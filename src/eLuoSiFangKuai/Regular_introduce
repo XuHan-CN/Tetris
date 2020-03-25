@@ -1,0 +1,75 @@
+package eLuoSiFangKuai;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import java.awt.FlowLayout;
+import javax.swing.JButton;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class Regular_introduce extends JFrame {
+
+	private JPanel contentPane;
+	/**
+	 * Create the frame.
+	 */
+	public Regular_introduce() {
+		setTitle("\u73A9\u6CD5\u4ECB\u7ECD");
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		setBounds(420, 250, 392, 202);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(10, 10, 174, 110);
+		contentPane.add(panel);
+		panel.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("\u2191\uFF1A\u65B9\u5757\u65CB\u8F6C");
+		lblNewLabel.setBounds(10, 5, 154, 15);
+		panel.add(lblNewLabel);
+		
+		JLabel label = new JLabel("\u2193\uFF1A\u65B9\u5757\u4E0B\u79FB");
+		label.setBounds(10, 30, 154, 20);
+		panel.add(label);
+		
+		JLabel label_1 = new JLabel("\u2190\uFF1A\u65B9\u5757\u5DE6\u79FB");
+		label_1.setBounds(10, 60, 154, 15);
+		panel.add(label_1);
+		
+		JLabel label_2 = new JLabel("\u2192\uFF1A\u65B9\u5757\u53F3\u79FB");
+		label_2.setBounds(10, 85, 154, 15);
+		panel.add(label_2);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBounds(194, 10, 174, 110);
+		contentPane.add(panel_1);
+		panel_1.setLayout(null);
+		
+		JLabel lblNewLabel_1 = new JLabel("S\uFF1A\u91CD\u65B0\u5F00\u59CB");
+		lblNewLabel_1.setBounds(10, 5, 154, 15);
+		panel_1.add(lblNewLabel_1);
+		
+		JLabel lblQ = new JLabel("Q\uFF1A\u9000\u51FA");
+		lblQ.setBounds(10, 30, 154, 15);
+		panel_1.add(lblQ);
+		
+		JButton btnNewButton = new JButton("\u786E\u5B9A");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				dispose();
+			}
+		});
+		btnNewButton.setBounds(65, 130, 232, 25);
+		contentPane.add(btnNewButton);
+	}
+}
